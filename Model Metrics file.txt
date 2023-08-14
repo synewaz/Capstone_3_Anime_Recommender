@@ -1,0 +1,28 @@
+Final Model
+1. BaselineOnly:
+   - RMSE: 3.243375
+   - Precision@10: 0.916755
+   - Time to run (in seconds): 0.808258
+   - RMSE^-1: 0.308321
+
+
+Features: username, anime_id, my_score
+
+
+Hyperparameter Tuning of BaselineOnly Model:
+ALS GridSearch Results:
+- Best RMSE: 3.2432166099322886
+- Best Parameters:
+*   Method: ALS
+*   `reg_i`: 10
+*   `reg_u`: 10
+*   `n_epochs`: 20
+
+
+SGD GridSearch Results:
+- Best RMSE: 3.2442268827437277
+- Best Parameters: 
+* Method: SGD
+* ‘reg’: 0.01
+* ‘n_epochs’: 20
+* ‘Learning_rate’: 0.005
